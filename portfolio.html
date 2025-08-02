@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding for proper text rendering -->
+    <meta charset="UTF-8">
+    <!-- Responsive design to ensure proper scaling on all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage as shown in the browser tab -->
+    <title>Faith Wanjiru - Software Engineer Portfolio</title>
+    
+    <!-- Link to external CSS stylesheet for styling -->
+    <link rel="stylesheet" href="portfolio.css">
+    
+    <!-- Preconnect improves loading time for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts import (Inter font family used) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation bar at the top of the page -->
+    <nav class="navigation">
+        <div class="nav-container">
+            
+            <!-- Logo or brand name -->
+            <div class="nav-logo">
+                Portfolio
+            </div>
+            
+            <!-- Desktop navigation links and theme toggle button -->
+            <div class="nav-desktop">
+                <!-- Active class indicates the current section -->
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                
+                <!-- Button to toggle dark/light mode theme -->
+                <button class="theme-toggle">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+            
+            <!-- Mobile navigation with theme toggle and hamburger menu -->
+            <div class="nav-mobile">
+                <!-- Theme toggle button for mobile -->
+                <button class="theme-toggle">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <!-- Hamburger button for toggling mobile menu -->
+                <button class="mobile-menu-toggle">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile menu links; shown or hidden based on menu toggle -->
+        <div class="mobile-menu">
+            <a href="#hero" class="mobile-nav-link">Home</a>
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#skills" class="mobile-nav-link">Skills</a>
+            <a href="#projects" class="mobile-nav-link">Projects</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section (landing section with intro and badges) -->
+        <section id="hero" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <!-- Badges showing roles/expertise -->
+                    <div class="hero-badges">
+                        <span class="badge">Frontend Developer</span>
+                        <span class="badge">UI/UX Designer</span>
+                        <span class="badge">Product Manager</span>
+                    </div>
+                    
+                    <!-- Main heading with name -->
+                    <h1 class="hero-title">Faith Wanjiru</h1>
+                    
+                    <!-- Brief introductory description -->
+                    <p class="hero-description">
+                        Crafting exceptional digital experiences through code, design, and strategic product thinking.
+                        I bridge the gap between technical implementation and user needs.
+                    </p>
+                    
+                    <!-- Call to action buttons and social media links -->
+                    <div class="hero-actions">
+                        <!-- Button navigating to About section -->
+                        <a href="#about" class="btn btn-primary">
+                            View My Work
+                            <span class="arrow-down">↓</span>
+                        </a>
+                        
+                        <!-- Social media/contact links -->
+                        <div class="social-links">
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                                <span class="icon">🐙</span>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                                <span class="icon">💼</span>
+                            </a>
+                            <a href="mailto:wanyoikefaithwanjiru@gmail.com" class="social-link">
+                                <span class="icon">✉️</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Decorative background elements in hero -->
+            <div class="hero-bg-elements">
+                <div class="bg-element bg-element-1"></div>
+                <div class="bg-element bg-element-2"></div>
+            </div>
+        </section>
+
+        <!-- About Section describing background and motivations -->
+        <section id="about" class="about">
+            <div class="container">
+                <!-- Section header with title and subtitle -->
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-description">
+                        Get to know the person behind the code - my background, passion, and what drives me as a developer
+                    </p>
+                </div>
+                
+                <div class="about-content">
+                    <!-- Main text content about Faith -->
+                    <div class="about-main">
+                        <div class="about-text">
+                            <h3>Hello, I'm Faith Wanjiru</h3>
+                            <div class="text-content">
+                                <p>
+                                    I'm a passionate software engineer with 2 years of experience crafting digital solutions 
+                                    that bridge the gap between complex technical requirements and intuitive user experiences. 
+                                    My journey in technology began during my computer science studies, where I discovered my love 
+                                    for both the logical problem-solving aspect of programming and the creative potential of web development.
+                                </p>
+                                <p>
+                                    What sets me apart is my holistic approach to development - I don't just write code, I architect 
+                                    experiences. Whether I'm optimizing a database query, designing a user interface, or planning a 
+                                    product roadmap, I always keep the end user and business objectives at the forefront of my decisions.
+                                </p>
+                                <p>
+                                    When I'm not coding, you'll find me listening to music, watching different documentaries or reading a novel. I believe in the power of community and 
+                                    continuous learning to drive innovation in our field.
+                                </p>
+                            </div>
+                            
+                            <!-- List of key driving motivations and values -->
+                            <div class="what-drives-me">
+                                <h4>What Drives Me</h4>
+                                <ul class="drives-list">
+                                    <li>Creating digital experiences that make a real difference in people's lives</li>
+                                    <li>Solving complex problems with simple, elegant solutions</li>
+                                    <li>Building bridges between technical possibilities and business needs</li>
+                                    <li>Mentoring others and fostering a collaborative development culture</li>
+                                    <li>Contributing to open-source projects and the developer community</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Sidebar with CV download card -->
+                    <div class="about-sidebar">
+                        <div class="cv-download-card">
+                            <!-- Icon indicating document -->
+                            <div class="cv-icon">📄</div>
+                            <h4>Download My CV</h4>
+                            <p>Get a comprehensive overview of about me, projects, and technical skills.</p>
+                            
+                            <!-- Link to CV hosted externally -->
+                            <a href="https://www.canva.com/design/DAGu2Y11cSg/Qsgp_nsgmCG7WNvBXr4WvQ/edit?utm_content=DAGu2Y11cSg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" 
+                               class="btn btn-primary" 
+                               target="_blank" 
+                               rel="noopener noreferrer">
+                                📥 Download CV
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Grid displaying personal highlights/attributes -->
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">💻</div>
+                        <div class="highlight-content">
+                            <h4>Passionate Problem Solver</h4>
+                            <p>I thrive on turning complex challenges into elegant, user-friendly solutions through clean code and thoughtful design.</p>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">💡</div>
+                        <div class="highlight-content">
+                            <h4>Continuous Learner</h4>
+                            <p>Technology evolves rapidly, and I'm committed to staying current with the latest trends, frameworks, and best practices.</p>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">❤️</div>
+                        <div class="highlight-content">
+                            <h4>User-Centric Approach</h4>
+                            <p>Every line of code I write is guided by the end user's experience, ensuring accessibility and intuitive interactions.</p>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">🎯</div>
+                        <div class="highlight-content">
+                            <h4>Results-Driven</h4>
+                            <p>I focus on delivering measurable impact through performance optimization, user engagement, and business value.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Educational Background section detailing studies and coursework -->
+                <div class="education-section">
+                    <h3>Educational Background</h3>
+                    <div class="education-grid">
+                        <!-- Education Card 1 -->
+                        <div class="education-card">
+                            <div class="education-header">
+                                <div class="education-icon">🎓</div>
+                                <div class="education-info">
+                                    <h4>Software Engineering</h4>
+                                    <p>Power Learn Project</p>
+                                    <p>2025</p>
+                                </div>
+                            </div>
+                          
+                            <div class="coursework">
+                                <p>Key Coursework:</p>
+                                <div class="coursework-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">Software Engineering Principles</span>
+                                    <span class="tag">Database Systems</span>
+                                    <span class="tag">Web Development</span>
+                                    <span class="tag">Entreprenuership</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Education Card 2 -->
+                        <div class="education-card">
+                            <div class="education-header">
+                                <div class="education-icon">🎓</div>
+                                <div class="education-info">
+                                    <h4>Information Communication Technology</h4>
+                                    <p>AkiraChix CodeHive</p>
+                                    <p>2024</p>
+                                </div>
+                            </div>
+                            <div class="education-badges">
+                                <span class="badge">Graduate with credit</span>
+                            </div>
+                            <div class="coursework">
+                                <p>Key Coursework:</p>
+                                <div class="coursework-tags">
+                                    <span class="tag">UI/UX Design</span>
+                                    <span class="tag">Product Management</span>
+                                    <span class="tag">Python</span>
+                                    <span class="tag">Data Software Architecture</span>
+                                    <span class="tag">Frontend Development</span>
+                                    <span class="tag">Life Skills</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section showing technical skills with progress bars -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <!-- Section title and description -->
+                <div class="section-header">
+                    <h2 class="section-title">Technical Skills</h2>
+                    <p class="section-description">
+                        A comprehensive overview of my programming languages, frameworks, and technical expertise
+                    </p>
+                </div>
+                
+                <!-- Programming languages skill cards -->
+                <div class="programming-languages">
+                    <div class="languages-card">
+                        <div class="languages-header">
+                            <h3>💻 Programming Languages</h3>
+                        </div>
+                        <div class="languages-grid">
+                            <!-- Each language's skill level and experience -->
+                            <div class="language-item">
+                                <div class="language-info">
+                                    <span class="language-name">JavaScript/ES6+</span>
+                                    <span class="language-experience">(1 year)</span>
+                                </div>
+                                <div class="language-level">95%</div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="language-item">
+                                <div class="language-info">
+                                    <span class="language-name">TypeScript</span>
+                                    <span class="language-experience">(2 years)</span>
+                                </div>
+                                <div class="language-level">90%</div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="language-item">
+                                <div class="language-info">
+                                    <span class="language-name">HTML5</span>
+                                    <span class="language-experience">(2+ years)</span>
+                                </div>
+                                <div class="language-level">95%</div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="language-item">
+                                <div class="language-info">
+                                    <span class="language-name">CSS3</span>
+                                    <span class="language-experience">(2 years)</span>
+                                </div>
+                                <div class="language-level">90%</div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="language-item">
+                                <div class="language-info">
+                                    <span class="language-name">Python</span>
+                                    <span class="language-experience">(2 years)</span>
+                                </div>
+                                <div class="language-level">80%</div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 80%"></div>
+                                </div>
+                            </div>
+                           
+                            <div class="language-item">
+                                <div class="language-info">
+                                    <span class="language-name">SQL</span>
+                                    <span class="language-experience">(3+ years)</span>
+                                </div>
+                                <div class="language-level">85%</div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 85%"></div>
+                                </div>
+                            </div>
+                         
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Other technical skills categorized -->
+                <div class="skills-grid">
+                    <!-- Frontend technologies -->
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <div class="skill-icon">🌐</div>
+                            <h3>Frontend Technologies</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">React.js</span>
+                                    <span class="skill-level">95%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Next.js</span>
+                                    <span class="skill-level">90%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Tailwind CSS</span>
+                                    <span class="skill-level">85%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 85%"></div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    
+                    <!-- Backend and Database technologies -->
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <div class="skill-icon">🗄️</div>
+                            <h3>Backend & Database</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Node.js</span>
+                                    <span class="skill-level">85%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 85%"></div>
+                                </div>
+                            </div>
+                           
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">PostgreSQL</span>
+                                    <span class="skill-level">80%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 80%"></div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    
+                    <!-- Tools and technologies used for development -->
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <div class="skill-icon">⚙️</div>
+                            <h3>Tools & Technologies</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Git/GitHub</span>
+                                    <span class="skill-level">95%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 95%"></div>
+                                </div>
+                            </div>
+            
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Lucid chart</span>
+                                    <span class="skill-level">55%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 55%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Slack</span>
+                                    <span class="skill-level">55%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 55%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Jira</span>
+                                    <span class="skill-level">75%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Technologies Faith is interested in learning -->
+                <div class="tech-interests">
+                    <h3>Tech Interests & Learning</h3>
+                    <p>Technologies and areas I'm passionate about exploring and staying updated with</p>
+                    <div class="interests-tags">
+                        <span class="interest-tag">Machine Learning & AI</span>
+                        <span class="interest-tag">Progressive Web Apps</span>
+                        <span class="interest-tag">Serverless Architecture</span>
+                        <span class="interest-tag">UI/UX Design</span>
+                        <span class="interest-tag">Product Management</span>
+                        <span class="interest-tag">DevOps & Cloud Computing</span>
+                        <span class="interest-tag">Mobile Development</span>
+                        <span class="interest-tag">IoT Applications</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section showcasing portfolio projects -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <!-- Section header -->
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-description">
+                        A showcase of my recent work demonstrating full-stack development capabilities, 
+                        problem-solving skills, and attention to user experience
+                    </p>
+                </div>
+                
+                <!-- Project category filter buttons (only 'All' active now) -->
+                <div class="project-filters">
+                    <button class="filter-btn active">All</button>
+                </div>
+                
+                <!-- Featured projects grid -->
+                <div class="featured-projects">
+                    <h3>⭐ Featured Work ⭐</h3>
+                    <div class="projects-grid featured-grid">
+                        <!-- First featured project card -->
+                        <div class="project-card featured">
+                            <div class="project-image">
+                                <img src="Raspberry Pi Camera and Microcontroller.jpg" alt="Pestguard_IOT Device">
+                                <!-- Overlay for category and status labels -->
+                                <div class="project-overlay">
+                                    <div class="project-category">IOT Development</div>
+                                    <div class="project-status">Live</div>
+                                </div>
+                                <!-- Buttons for live demo and source code -->
+                                <div class="project-actions">
+                                    <a href="https://shopflow-demo.vercel.app" target="_blank" class="btn btn-secondary">👁️ Live Demo</a>
+                                    <a href="https://github.com/Faith-wanjiru/Naji-Frontend.git" target="_blank" class="btn btn-secondary">📁 Code</a>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h4>Pestguard Dashboard</h4>
+                                <p>This comprehensive application monitors the number of small-scale coffee growers dealing with pest infestations on their farms. It tracks the percentage of these farmers who utilize an IoT device that captures images of the coffee fields; if it identifies signs of pest problems based on pre-existing data, it sends a notification to the farmer outlining measures to prevent the escalation of the infestation.</p>
+                                <div class="project-tags">
+                                    <span class="tag">ORB Algorithm</span>
+                                    <span class="tag">Django</span>
+                                    <span class="tag">Nextjs</span>
+                                    <span class="tag">Tailwind CSS</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Second featured project card -->
+                        <div class="project-card featured">
+                            <div class="project-image">
+                                <img src="Food Website.jpg" alt="Food Nutrition Web Application">
+                                <div class="project-overlay">
+                                    <div class="project-category">Food Nutrition Web Application</div>
+                                    <div class="project-status">Live</div>
+                                </div>
+                                <div class="project-actions">
+                                    <a href="https://projecthub-app.netlify.app" target="_blank" class="btn btn-secondary">👁️ Live Demo</a>
+                                    <a href="https://github.com/Faith-wanjiru/FoodNutrition-Application" target="_blank" class="btn btn-secondary">📁 Code</a>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h4>Web Application- Food Nutrition</h4>
+                                <p>Designed to show the amount of calories and its substitutes</p>
+                                <div class="project-tags">
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Summary statistics about projects -->
+                <div class="project-stats">
+                    <h3>Project Overview</h3>
+                    <div class="stats-grid">
+                        <div class="stat">
+                            <div class="stat-number">6+</div>
+                            <div class="stat-label">Projects Built</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Technologies Used</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">90%</div>
+                            <div class="stat-label">Live & Functional</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">2+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section with form and contact details -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <!-- Section header -->
+                <div class="section-header">
+                    <h2 class="section-title">Let's Connect</h2>
+                    <p class="section-description">
+                        I'm always open to discussing new opportunities, interesting projects, and ways we can work together. 
+                        Whether you're looking to hire, collaborate, or just want to chat about technology, I'd love to hear from you.
+                    </p>
+                </div>
+                
+                <div class="contact-content">
+                    <!-- Contact form side -->
+                    <div class="contact-form-section">
+                        <div class="form-card">
+                            <h3>💬 Get in Touch</h3>
+                            <p>Fill out the form below and I'll get back to you as soon as possible.</p>
+                            
+                            <form class="contact-form">
+                                <!-- Name and email fields -->
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="name">Full Name *</label>
+                                        <input type="text" id="name" name="name" required placeholder="Your full name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email Address *</label>
+                                        <input type="email" id="email" name="email" required placeholder="your.email@company.com">
+                                    </div>
+                                </div>
+                                
+                                <!-- Company and inquiry type fields -->
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="company">Company/Organization</label>
+                                        <input type="text" id="company" name="company" placeholder="Company name (optional)">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inquiryType">Type of Inquiry *</label>
+                                        <select id="inquiryType" name="inquiryType" required>
+                                            <option value="">Select inquiry type</option>
+                                            <option value="job-opportunity">💼 Job Opportunity</option>
+                                            <option value="collaboration">👥 Project Collaboration</option>
+                                            <option value="consultation">💬 Technical Consultation</option>
+                                            <option value="other">✉️ Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <!-- Subject field -->
+                                <div class="form-group">
+                                    <label for="subject">Subject *</label>
+                                    <input type="text" id="subject" name="subject" required placeholder="Brief subject line">
+                                </div>
+                                
+                                <!-- Project timeline dropdown -->
+                                <div class="form-group">
+                                    <label for="timeline">Project Timeline (if applicable)</label>
+                                    <select id="timeline" name="timeline">
+                                        <option value="">Select timeline</option>
+                                        <option value="asap">ASAP</option>
+                                        <option value="1-2-weeks">1-2 weeks</option>
+                                        <option value="1-month">Within 1 month</option>
+                                        <option value="2-3-months">2-3 months</option>
+                                        <option value="flexible">Flexible</option>
+                                    </select>
+                                </div>
+                                
+                                <!-- Message textarea -->
+                                <div class="form-group">
+                                    <label for="message">Message *</label>
+                                    <textarea id="message" name="message" required placeholder="Tell me about your project, role, or what you'd like to discuss. Include any relevant details like budget, timeline, or specific requirements."></textarea>
+                                </div>
+                                
+                                <!-- Submit button -->
+                                <button type="submit" class="btn btn-primary">
+                                    ✉️ Send Message
+                                </button>
+                                
+                                <!-- Note on response time -->
+                                <p class="form-note">
+                                    I typically respond within 24 hours. For urgent matters, feel free to call or text.
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact information side -->
+                    <div class="contact-info-section">
+                        <div class="contact-info-card">
+                            <h3>Contact Information</h3>
+                            <p>Multiple ways to reach me</p>
+                            
+                            <!-- Email contact method -->
+                            <a href="mailto:wanyoikefaithwanjiru@gmail.com" class="contact-item">
+                                <div class="contact-icon">✉️</div>
+                                <div class="contact-details">
+                                    <h4>Email</h4>
+                                    <p>wanyoikefaithwanjiru@gmail.com</p>
+                                    <small>Best way to reach me</small>
+                                </div>
+                            </a>
+                            
+                            <!-- Phone contact method -->
+                            <a href="tel:+254111776813" class="contact-item">
+                                <div class="contact-icon">📞</div>
+                                <div class="contact-details">
+                                    <h4>Phone</h4>
+                                    <p>0111776813</p>
+                                    <small>Available Mon-Fri, 9AM-6PM EAT</small>
+                                </div>
+                            </a>
+                            
+                            <!-- Location info -->
+                            <div class="contact-item">
+                                <div class="contact-icon">📍</div>
+                                <div class="contact-details">
+                                    <h4>Location</h4>
+                                    <p>Nakuru, Kenya</p>
+                                    <small>Open to remote opportunities</small>
+                                </div>
+                            </div>
+                            
+                            <!-- Availability status -->
+                            <div class="contact-item">
+                                <div class="contact-icon">📅</div>
+                                <div class="contact-details">
+                                    <h4>Availability</h4>
+                                    <p>Available Now</p>
+                                    <small>Ready for new opportunities</small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Professional profiles and social links -->
+                        <div class="social-profiles-card">
+                            <h3>Professional Profiles</h3>
+                            <p>Check out my work and professional background</p>
+                            
+                            <!-- GitHub profile link -->
+                            <a href="https://github.com/KelsyDev" target="_blank" class="social-item">
+                                <div class="social-icon">🐙</div>
+                                <div class="social-details">
+                                    <h4>GitHub</h4>
+                                    <p>@KelsyDev</p>
+                                    <small>View my code and contributions</small>
+                                </div>
+                            </a>
+                            
+                            <!-- LinkedIn profile link -->
+                            <a href="https://www.linkedin.com/in/faith-wanyoike-2047a72b3/" target="_blank" class="social-item">
+                                <div class="social-icon">💼</div>
+                                <div class="social-details">
+                                    <h4>LinkedIn</h4>
+                                    <p>Wanjiru Faith</p>
+                                    <small>Professional network and experience</small>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <!-- Availability card reiterating openness to opportunities -->
+                        <div class="availability-card">
+                            <div class="availability-icon">💼</div>
+                            <h4>Available for Opportunities</h4>
+                            <p>I'm currently open to new roles and interesting projects. Let's discuss how I can contribute to your team's success.</p>
+                            <div class="availability-status">
+                                <div class="status-dot"></div>
+                                Available Now
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Footer of the page -->
+                <div class="footer">
+                    <p>Thank you for considering me for your team or project. I look forward to connecting with you!</p>
+                    <p>&copy; 2025 KelsyDev • Built with HTML & CSS •</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
